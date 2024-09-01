@@ -1,0 +1,10 @@
+body {
+    margin-top: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Sans Mono", monospace;
+}

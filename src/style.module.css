@@ -1,0 +1,142 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.line {
+    border-bottom: 2px solid #fff;
+}
+.header {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: -3px;
+}
+.para {
+    margin-top: -20px;
+    font-size: 14px;
+}
+.icon {
+    height: 80px;
+    width: 80px;
+}
+.form {
+    margin-top: 25px;
+}
+.cardroot {
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    width: 500px;
+}
+.main {
+    background-color: #4D869C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* margin: 10px 0px 0px 17px; */
+    gap: 20px;
+}
+.title {
+    font-size: 17px;
+    font-weight: bold;
+}
+.grid_item {
+    display: flex;
+    /* gap: 5px; */
+}
+.customSelect {
+    border: none; 
+    outline: none; 
+    padding: 3px;
+    font-size: 13px;
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+    margin-left: 5px;
+  }
+  
+  .customSelect:hover {
+    cursor: pointer; 
+  }
+  
+  .customSelect:focus {
+    box-shadow: 0 0 5px #d3d3d3;
+  }
+input[type="checkbox"] {
+    background-color: #fff;
+    margin-top: 3px;
+    font: inherit;
+    color: #000;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+}
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
+.refresh_button {
+    background-color: #fff;
+}
+.generated_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.generated_password_input {
+    align-self: center;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    width: 400px;
+    text-align: center;
+}
+.generated_password_input:focus {
+    border: none;
+    outline: none;
+    appearance: none;
+}
+.copy {
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+.star {
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    padding: 6px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
